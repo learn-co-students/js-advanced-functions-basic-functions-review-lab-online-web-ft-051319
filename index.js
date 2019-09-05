@@ -30,7 +30,7 @@ const Calculator = {
 function actionApplyer(integer, fxnsArray) {
     let result = integer;
     for (let i = 0; i < fxnsArray.length; i++) {
-        result = fxnsArray[i] = fxnsArray[i](result)
+        result = fxnsArray[i](result)
     }
     return result;
 }
